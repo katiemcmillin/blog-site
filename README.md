@@ -6,14 +6,21 @@ Post-it
 
 ## Project Description
 
-My project will be a Reddit-like social media site with the ability to interact with posts, upvoting them and being able to see the highest scored posts
+My project will be a Reddit-like social media site with the ability to interact with posts, upvoting them and being able to see the highest scored posts.
+
+If I have time during the week, I would like to add the functionality of users being able to edit and delete posts. Also, I would like to add the ability to embed video and images Post-MVP.
 
 ## Wireframes
 
-Upload images of your wireframes to an image hosting site or add them to an assets folder in your repo and link them here with a description of each specific wireframe.
+https://github.com/katiemcmillin/blog-site/blob/main/wireframes/Social%20Media%20App%20-%20%20Homepage.png
+https://github.com/katiemcmillin/blog-site/blob/main/wireframes/Social%20Media%20App%20-%20New%20Post.png
+https://github.com/katiemcmillin/blog-site/blob/main/wireframes/Social%20Media%20App%20-%20Show%20Page.png
+https://github.com/katiemcmillin/blog-site/blob/main/wireframes/Social%20Media%20App%20-%20Posts%20of%20the%20Day.png
+
 
 ## Component Hierarchy
 
+https://github.com/katiemcmillin/blog-site/blob/main/component-hierarchy/Component%20hierarchy.png
 
 ## API and Data Sample
 
@@ -103,12 +110,16 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Pseudocode | H | 1hr| N/A | N/A |
 | Set up initial CSS | H | 1hr| N/A | N/A |
 | Navbar | H | .5hr| N/A | N/A |
-| Structure of Post Component | H | 2hr| N/A | N/A |
-| Structure of Show Page Component | H | 2hr| N/A | N/A |
-| Structure of New Post Component | H | 2hr| N/A | N/A |
-| Structure of Comment Component | H | 2hr| N/A | N/A |
-| Upvoting/Structure of Posts of Day Component | H | 2hr| N/A | N/A |
-| Airtable Post Request | H | 1hr| N/A | N/A |
+| Structure of Post Component | H | 2hrs| N/A | N/A |
+| Structure of Show Page Component | H | 2hrs| N/A | N/A |
+| Structure of New Post Component | H | 2hrs| N/A | N/A |
+| Structure of Comment Component | H | 2hrs| N/A | N/A |
+| Upvoting/Structure of Posts of Day Component | H | 2hrs| N/A | N/A |
+| Airtable Post Request | H | 2hrs| N/A | N/A |
+| Airtable Put Request | H | 1hrs| N/A | N/A |
+| Airtable Delete Request | H | 1hr| N/A | N/A |
+| Advanced CSS | H | 1hr| N/A | N/A |
+
 | Total | H | 6hrs| 5hrs | 5hrs |
 
 ## SWOT Analysis
