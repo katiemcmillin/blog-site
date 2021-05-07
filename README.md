@@ -108,9 +108,6 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Structure of New Post Component | H | 2hr| N/A | N/A |
 | Structure of Comment Component | H | 2hr| N/A | N/A |
 | Upvoting/Structure of Posts of Day Component | H | 2hr| N/A | N/A |
-
-|| H | 1hr| N/A | N/A |
-
 | Airtable Post Request | H | 1hr| N/A | N/A |
 | Total | H | 6hrs| 5hrs | 5hrs |
 
