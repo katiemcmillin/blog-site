@@ -116,11 +116,11 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Structure of Comment Component | H | 2hrs| N/A | N/A |
 | Upvoting/Structure of Posts of Day Component | H | 2hrs| N/A | N/A |
 | Airtable Post Request | H | 2hrs| N/A | N/A |
-| Airtable Put Request | H | 1hrs| N/A | N/A |
-| Airtable Delete Request | H | 1hr| N/A | N/A |
-| Advanced CSS | H | 1hr| N/A | N/A |
-
-| Total | H | 6hrs| 5hrs | 5hrs |
+| Airtable Put Request | L | 2hrs| N/A | N/A |
+| Airtable Delete Request | L | 2hrs| N/A | N/A |
+| Advanced Styling/CSS | L | 6 hrs| N/A | N/A |
+| Post MVP | L | 8hrs| N/A | N/A |
+| Total | H | 36.5 hrs| N/A | N/A |
 
 ## SWOT Analysis
 
