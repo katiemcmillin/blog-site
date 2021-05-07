@@ -2,7 +2,7 @@
 
 ## Project Name
 
-For the Love of the Game
+Post-it
 
 ## Project Description
 
