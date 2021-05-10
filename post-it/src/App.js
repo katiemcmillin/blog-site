@@ -5,14 +5,17 @@ import { Route } from "react-router-dom";
 import Homepage from "./components/Homepage";
 import NewPage from "./components/NewPage";
 import PostsOfTheDay from "./components/PostOfTheDay"
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { baseURL, config } from "./services";
 
 function App() {
+  const [posts, setPosts] = useState([]);
+  const [toggleFetch, setToggleFetch] = useState(false);
+
   useEffect(() => {
     const fetchPosts = async () => {
       const response = await axios.get(baseURL, config);
-      console.log(response.data.records)
+      setPosts(response.data.records)
     }
     fetchPosts();
 }, [])
@@ -21,7 +24,7 @@ function App() {
     <div className="App">
       <Nav />
       <Route exact path="/">
-        <Homepage />
+        <Homepage posts={posts} setToggleFetch={setToggleFetch}/>
       </Route>
       <Route exact path="/new">
         <NewPage />

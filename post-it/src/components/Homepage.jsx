@@ -1,6 +1,11 @@
-function Homepage() {
+import Post from "./Post"
+function Homepage(props) {
   return (
-<div>This is the homepage</div>
-  )
+    <main>
+      {props.posts.map((post) => (
+        <Post post={post} key={post.id} setToggleFetch={props.setToggleFetch} />
+      ))}
+    </main>
+  );
 }
 export default Homepage;
