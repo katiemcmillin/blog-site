@@ -18,20 +18,21 @@ function App() {
       setPosts(response.data.records)
     }
     fetchPosts();
-}, [])
+}, [toggleFetch])
 
   return (
     <div className="App">
       <Nav />
       <Route exact path="/">
-        <Homepage posts={posts} setToggleFetch={setToggleFetch}/>
+        <Homepage posts={posts}/>
       </Route>
       <Route exact path="/new">
-        <NewPage />
+        <NewPage setToggleFetch={setToggleFetch}/>
       </Route>
       <Route exact path="/posts-of-the-day">
         <PostsOfTheDay />
       </Route>
+ 
     </div>
   );
 }
