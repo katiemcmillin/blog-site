@@ -4,9 +4,10 @@ import Nav from "./components/Nav";
 import { Route } from "react-router-dom";
 import Homepage from "./components/Homepage";
 import NewPage from "./components/NewPage";
-import PostsOfTheDay from "./components/PostOfTheDay"
+import PostsOfTheDay from "./components/PostOfTheDay";
 import { useEffect, useState } from "react";
 import { baseURL, config } from "./services";
+
 
 function App() {
   const [posts, setPosts] = useState([]);
