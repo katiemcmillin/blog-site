@@ -45,7 +45,7 @@ function App() {
         <PostsOfTheDay />
       </Route>
       <Route exact path={`/show-page/:id`}>
-        <ShowPage posts={posts} />
+        <ShowPage posts={posts} setToggleFetch={setToggleFetch}/>
       </Route>
     </div>
   );

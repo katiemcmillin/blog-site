@@ -1,8 +1,7 @@
-import { Link, Route } from "react-router-dom";
-import ShowPage from "./ShowPage";
+import { Link} from "react-router-dom";
 import { useState } from "react";
 function Post(props) {
-  const { title, body, author, votes } = props.post.fields;
+  const { title, body, author, votes} = props.post.fields;
   const [count, setCount] = useState(0);
   function handleClick (e)  {
     e.preventDefault();
@@ -11,6 +10,7 @@ function Post(props) {
 
 
   return (
+    <div>
     <main id="post-container">
       <h5>{author}</h5>
       <h3>{title}</h3>
@@ -24,7 +24,8 @@ function Post(props) {
         <button onClick={handleClick}>Upvote</button>
         <span>{votes}</span>
       </div>
-    </main>
+      </main>
+    </div>
   )
 }
 export default Post;
