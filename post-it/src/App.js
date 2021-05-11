@@ -5,35 +5,48 @@ import { Route } from "react-router-dom";
 import Homepage from "./components/Homepage";
 import NewPage from "./components/NewPage";
 import PostsOfTheDay from "./components/PostOfTheDay";
+import ShowPage from "./components/ShowPage";
 import { useEffect, useState } from "react";
-import { baseURL, config } from "./services";
-
+import { postBaseURL, commentBaseURL, config } from "./services";
 
 function App() {
   const [posts, setPosts] = useState([]);
   const [toggleFetch, setToggleFetch] = useState(false);
 
   useEffect(() => {
-    const fetchPosts = async () => {
-      const response = await axios.get(baseURL, config);
-      setPosts(response.data.records)
-    }
-    fetchPosts();
-}, [toggleFetch])
+    const fetchPostsAndComments = async () => {
+      const postResponse = await axios.get(postBaseURL, config);
+      const commentResponse = await axios.get(commentBaseURL, config);
+      const retrievedComments = commentResponse.data.records;
+      const retrievedPosts = postResponse.data.records.map((post) => {
+        return {
+          ...post,
+          fields: {
+            ...post.fields,
+            comments: post.fields.comments ? retrievedComments.filter((comment) => post.fields.comments.includes(comment.id)) : []
+          }
+        }
+      });
+      setPosts(retrievedPosts)
+    };
+    fetchPostsAndComments();
+  }, [toggleFetch]);
 
   return (
     <div className="App">
       <Nav />
       <Route exact path="/">
-        <Homepage posts={posts}/>
+        <Homepage posts={posts} />
       </Route>
       <Route exact path="/new">
-        <NewPage setToggleFetch={setToggleFetch}/>
+        <NewPage setToggleFetch={setToggleFetch} />
       </Route>
       <Route exact path="/posts-of-the-day">
         <PostsOfTheDay />
       </Route>
- 
+      <Route exact path={`/show-page/:id`}>
+        <ShowPage posts={posts} />
+      </Route>
     </div>
   );
 }

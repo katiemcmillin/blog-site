@@ -1,9 +1,9 @@
 import Post from "./Post"
 function Homepage(props) {
-  return (
-    <main>
+   return (
+     <main>
       {props.posts.map((post) => (
-        <Post post={post} key={post.id} />
+        <Post post={post} />
       ))}
     </main>
   );

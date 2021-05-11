@@ -2,7 +2,7 @@ import { Link, Route } from "react-router-dom";
 import ShowPage from "./ShowPage";
 import { useState } from "react";
 function Post(props) {
-  const { title, body, author } = props.post.fields;
+  const { title, body, author, votes } = props.post.fields;
   const [count, setCount] = useState(0);
   function handleClick (e)  {
     e.preventDefault();
@@ -21,9 +21,8 @@ function Post(props) {
       <div id="button-container">
         <Link to={`/show-page/${props.post.id}`}><button>Add Comment</button>
         </Link>
-        <Route exact path={`/show-page/${props.post.id}`}><ShowPage post={props.post} /></Route>
         <button onClick={handleClick}>Upvote</button>
-        <span>{count}</span>
+        <span>{votes}</span>
       </div>
     </main>
   )

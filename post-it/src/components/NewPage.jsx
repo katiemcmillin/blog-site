@@ -1,5 +1,5 @@
 import axios from "axios";
-import { baseURL, config } from "../services";
+import { postBaseURL, config } from "../services";
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
 
@@ -18,7 +18,7 @@ function NewPage(props) {
       body,
       author,
     };
-    await axios.post(baseURL, { fields: newPost }, config);
+    await axios.post(postBaseURL, { fields: newPost }, config);
     props.setToggleFetch((curr) => !curr);
     history.push("/");
   };
