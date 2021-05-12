@@ -26,11 +26,11 @@ const handleSubmit = (e) => {
   return (
     <div>
     <main id="post-container">
-      <h5>{author}</h5>
+      <h5 id="username">{author}</h5>
       <h3>{title}</h3>
       <div id=""></div>
       <div id="text-container">
-        <p>{body }</p>
+        <div className="wrapper-div"><p>{body }</p></div>
       </div>
       <div id="button-container">
         <Link to={`/show-page/${props.post.id}`}><button>Add Comment</button>

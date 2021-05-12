@@ -1,7 +1,7 @@
 import Post from "./Post"
 function Homepage(props) {
    return (
-     <main>
+     <main id="body">
       {props.posts.map((post) => (
         <Post id={post.id} post={post} setToggleFetch={props.setToggleFetch}/>
       ))}
