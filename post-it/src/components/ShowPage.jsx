@@ -8,8 +8,8 @@ const params = useParams();
   const { author, title, body, comments } = post.fields;
 
   return ( 
-  <div>
-     <h5>{author}</h5>
+  <div className="whole-post-container">
+     <h5 className="username">{author}</h5>
      <h3>{title}</h3>
      <div id=""></div>
       <div id="text-container">

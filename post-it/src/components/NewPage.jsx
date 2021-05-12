@@ -26,7 +26,7 @@ function NewPage(props) {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form id="new-post" onSubmit={handleSubmit}>
       <div id="input-title">
         <input
           type="text"
@@ -34,6 +34,8 @@ function NewPage(props) {
           placeholder="Title"
           onChange={(e) => setTitle(e.target.value)}
         />
+        </div>
+        <div id="input-author">
         <input
           type="text"
           value={author}
@@ -41,9 +43,10 @@ function NewPage(props) {
           onChange={(e) => setAuthor(e.target.value)}
         />
       </div>
-      <div id="input-author">
+      <div id="input-body">
         <input
-          type="text"
+          type="textarea"
+          id="form-body"
           value={body}
           placeholder="Body"
           onChange={(e) => setBody(e.target.value)}

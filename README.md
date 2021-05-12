@@ -4,6 +4,8 @@
 
 Post-it
 
+https://post-it-site.netlify.app
+
 ## Project Description
 
 My project will be a Reddit-like social media site with the ability to interact with posts, upvoting them and being able to see the highest scored posts.
