@@ -1,13 +1,27 @@
 import { Link} from "react-router-dom";
-import { useState } from "react";
-function Post(props) {
-  const { title, body, author, votes} = props.post.fields;
-  const [count, setCount] = useState(0);
-  function handleClick (e)  {
-    e.preventDefault();
-    setCount(count + 1);
-} 
+import { useEffect, useState } from "react";
+import axios from "axios";
+import {config} from "../services"
 
+function Post(props) {
+  const { title, body, author, votes } = props.post.fields;
+  const [count, setCount] = useState(votes);
+  useEffect(() => {
+    const handlePatch = async () => {
+      const newCount = {
+        votes: count,
+      };
+      const specificURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/posts/${props.post.id}`
+      await axios.patch(specificURL, { fields: newCount }, config);
+      props.setToggleFetch((curr) => !curr);
+    }
+    handlePatch();
+  }, [props.setToggleFetch, count])
+
+const handleSubmit = (e) => {
+  e.preventDefault();
+  setCount(count + 1);
+}
 
   return (
     <div>
@@ -20,9 +34,11 @@ function Post(props) {
       </div>
       <div id="button-container">
         <Link to={`/show-page/${props.post.id}`}><button>Add Comment</button>
-        </Link>
-        <button onClick={handleClick}>Upvote</button>
-        <span>{votes}</span>
+          </Link>
+          <form onSubmit={handleSubmit }>
+            <button value={votes} type="submit">Upvote</button>
+            <span>{votes}</span>
+            </form>
       </div>
       </main>
     </div>

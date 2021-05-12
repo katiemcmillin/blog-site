@@ -8,6 +8,7 @@ function NewPage(props) {
   const [title, setTitle] = useState("");
   const [body, setBody] = useState("");
   const [author, setAuthor] = useState("");
+  const [votes, setVotes] = useState(0);
   const history = useHistory();
 
 
@@ -17,6 +18,7 @@ function NewPage(props) {
       title,
       body,
       author,
+      votes,
     };
     await axios.post(postBaseURL, { fields: newPost }, config);
     props.setToggleFetch((curr) => !curr);

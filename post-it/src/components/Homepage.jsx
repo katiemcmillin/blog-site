@@ -3,7 +3,7 @@ function Homepage(props) {
    return (
      <main>
       {props.posts.map((post) => (
-        <Post id={post.id} post={post} />
+        <Post id={post.id} post={post} setToggleFetch={props.setToggleFetch}/>
       ))}
     </main>
   );

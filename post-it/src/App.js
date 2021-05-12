@@ -36,13 +36,13 @@ function App() {
     <div className="App">
       <Nav />
       <Route exact path="/">
-        <Homepage posts={posts} />
+        <Homepage setToggleFetch={setToggleFetch} posts={posts} />
       </Route>
       <Route exact path="/new">
         <NewPage setToggleFetch={setToggleFetch} />
       </Route>
       <Route exact path="/posts-of-the-day">
-        <PostsOfTheDay />
+        <PostsOfTheDay posts={posts} setToggleFetch={setToggleFetch}/>
       </Route>
       <Route exact path={`/show-page/:id`}>
         <ShowPage posts={posts} setToggleFetch={setToggleFetch}/>

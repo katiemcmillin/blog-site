@@ -15,6 +15,8 @@ function CommentForm(props) {
     };
     await axios.post(commentBaseURL, { fields: newComment }, config);
     props.setToggleFetch((curr) => !curr);
+    setAuthor("");
+    setContent("");
   }
 
   return  (
