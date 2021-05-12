@@ -24,7 +24,7 @@ const handleSubmit = (e) => {
 }
 
   return (
-    <div>
+    <div id="whole-post-container">
     <main id="post-container">
       <h5 id="username">{author}</h5>
       <h3>{title}</h3>
