@@ -4,7 +4,7 @@ import Nav from "./components/Nav";
 import { Route } from "react-router-dom";
 import Homepage from "./components/Homepage";
 import NewPage from "./components/NewPage";
-import PostsOfTheDay from "./components/PostOfTheDay";
+import TopPosts from "./components/TopPosts";
 import ShowPage from "./components/ShowPage";
 import { useEffect, useState } from "react";
 import { postBaseURL, commentBaseURL, config } from "./services";
@@ -41,8 +41,8 @@ function App() {
       <Route exact path="/new">
         <NewPage setToggleFetch={setToggleFetch} />
       </Route>
-      <Route exact path="/posts-of-the-day">
-        <PostsOfTheDay posts={posts} setToggleFetch={setToggleFetch}/>
+      <Route exact path="/top-posts">
+        <TopPosts posts={posts} setToggleFetch={setToggleFetch}/>
       </Route>
       <Route exact path={`/show-page/:id`}>
         <ShowPage posts={posts} setToggleFetch={setToggleFetch}/>

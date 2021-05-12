@@ -5,7 +5,7 @@ import CommentForm from "./CommentForm"
 function ShowPage(props) {
 const params = useParams();
 const post = props.posts.find((post) => post.id === params.id);
-console.log(post)
+
   return ( 
   <div>
      <h5>{post.fields.author}</h5>

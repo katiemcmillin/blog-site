@@ -1,5 +1,5 @@
 import Post from "./Post"
-function PostOfTheDay(props) {
+function TopPosts(props) {
   const postArray = props.posts;
   const newArray = postArray.sort((a, b) => {
     return b.fields.votes - a.fields.votes;
@@ -14,4 +14,4 @@ const topThree = newArray.slice(0, 3);
       ))}
     </main> </>)
 }
-export default PostOfTheDay;
+export default TopPosts;
