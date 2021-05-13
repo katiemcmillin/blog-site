@@ -32,6 +32,7 @@ function NewPage(props) {
           type="text"
           value={title}
           placeholder="Title"
+          maxLength="150"
           onChange={(e) => setTitle(e.target.value)}
         />
         </div>
@@ -40,17 +41,18 @@ function NewPage(props) {
           type="text"
           value={author}
           placeholder="Author"
+          maxLength="15"
           onChange={(e) => setAuthor(e.target.value)}
         />
       </div>
       <div id="input-body">
-        <input
+        <textarea
           type="textarea"
           id="form-body"
           value={body}
           placeholder="Body"
-          onChange={(e) => setBody(e.target.value)}
-        />
+          maxLength="1000"
+          onChange={(e) => setBody(e.target.value)}/>
       </div>
 
         <button type="submit">Submit</button>
