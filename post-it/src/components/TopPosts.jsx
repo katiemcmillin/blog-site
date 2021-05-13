@@ -8,7 +8,7 @@ function TopPosts(props) {
 const topThree = newArray.slice(0, 3);
 
   return (<>
-   <main className="body">
+   <main>
       {topThree.map((post) => (
         <Post id={post.id} post={post} setToggleFetch={props.setToggleFetch}/>
       ))}
