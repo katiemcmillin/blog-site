@@ -16,7 +16,7 @@ function Post(props) {
       props.setToggleFetch((curr) => !curr);
     }
     handlePatch();
-  }, [props.setToggleFetch, count])
+  }, [props.setToggleFetch, count, props])
 
 const handleSubmit = (e) => {
   e.preventDefault();

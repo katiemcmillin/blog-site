@@ -3,8 +3,13 @@ import Comment from "./Comment"
 import CommentForm from "./CommentForm"
 
 function ShowPage(props) {
-const params = useParams();
+  const params = useParams();
   const post = props.posts.find((post) => post.id === params.id);
+  if (!post) {
+    return (
+      <h3>Loading...</h3>
+    )
+  }
   const { author, title, body, comments } = post.fields;
 
   return ( 

@@ -21,8 +21,8 @@ function CommentForm(props) {
 
   return  (
     <form onSubmit={handleSubmit}>
-      <input required value={content} placeholder="content" onChange={(e) => setContent(e.target.value)} />
-      <input required value={author} placeholder="author" onChange={(e) => setAuthor(e.target.value)} />
+      <input id="comment" required value={content} placeholder="content" onChange={(e) => setContent(e.target.value)} />
+      <input id="comment-author" required value={author} placeholder="author" onChange={(e) => setAuthor(e.target.value)} />
       <button type="submit">Make A Comment!</button>
     </form>
   )
