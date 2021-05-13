@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import Comment from "./Comment"
 import CommentForm from "./CommentForm"
 
+
 function ShowPage(props) {
   const params = useParams();
   const post = props.posts.find((post) => post.id === params.id);

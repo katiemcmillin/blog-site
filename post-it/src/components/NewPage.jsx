@@ -3,7 +3,6 @@ import { postBaseURL, config } from "../services";
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
 
-
 function NewPage(props) {
   const [title, setTitle] = useState("");
   const [body, setBody] = useState("");
@@ -26,6 +25,7 @@ function NewPage(props) {
   };
 
   return (
+    <main className='body'>
     <form id="new-post" onSubmit={handleSubmit}>
       <div id="input-title">
         <input
@@ -55,9 +55,10 @@ function NewPage(props) {
           onChange={(e) => setBody(e.target.value)}/>
       </div>
 
-        <button type="submit">Submit</button>
+        <button className="comment-submit" type="submit">Submit</button>
 
-    </form>
+      </form>
+      </main>
   );
 }
 export default NewPage;

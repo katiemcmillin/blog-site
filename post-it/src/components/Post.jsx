@@ -1,4 +1,7 @@
-import { Link} from "react-router-dom";
+import { Link } from "react-router-dom";
+import { faAngleUp } from "@fortawesome/free-solid-svg-icons"
+import {faComment} from "@fortawesome/free-solid-svg-icons"
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 import { useEffect, useState } from "react";
 import axios from "axios";
 import {config} from "../services"
@@ -33,10 +36,10 @@ const handleSubmit = (e) => {
         <div className="wrapper-div"><p>{body }</p></div>
       </div>
       <div id="button-container">
-        <Link to={`/show-page/${props.post.id}`}><button>Add Comment</button>
+        <Link to={`/show-page/${props.post.id}`}><button id="comment-button"><FontAwesomeIcon icon={faComment} /></button>
           </Link>
           <form onSubmit={handleSubmit }>
-            <button value={votes} type="submit">Upvote</button>
+            <button id="up-arrow"value={votes} type="submit"><FontAwesomeIcon icon={faAngleUp} /></button>
             <span>{votes}</span>
             </form>
       </div>
