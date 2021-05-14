@@ -17,7 +17,7 @@
   padding: 20px 0px 20px 5px;
   text-align: left;
   border: 1px solid #d6d6d6;
-  background-color:#fef5fd;
+  background-color:#76cdec;
 }
 #nav-container {
   background-color: #f7dd00;
@@ -84,6 +84,9 @@ border: 1px solid black;
   #left-link, #right-link {
     margin: 10px;
     font-size: 20px;
+}
+.wrapper-div {
+  margin: 50px 250px 50px 250px;
 }
 }  
 
