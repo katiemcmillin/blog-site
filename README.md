@@ -26,8 +26,6 @@ https://github.com/katiemcmillin/blog-site/blob/main/component-hierarchy/Compone
 
 ## API and Data Sample
 
-Show us a snippet of JSON returned by your Airtable (you can find it under the API documentation) so we know you can access it and get the info you need. This __must__ be properly formatted. An example is below:
-
 ```json
 {
     "records": [
@@ -65,10 +63,7 @@ Show us a snippet of JSON returned by your Airtable (you can find it under the A
 
 ### MVP/PostMVP
 
-The functionality will then be divided into two separate lists: MVP and PostMVP.  Carefully decide what is placed into your MVP, as the client will expect this functionality to be implemented upon project completion.  
-
 #### MVP 
-*These are examples only. Replace with your own MVP features.*
 
 - Users can add their own posts
 - Users can upvote posts
@@ -76,8 +71,6 @@ The functionality will then be divided into two separate lists: MVP and PostMVP.
 - The posts with the most votes will be calculated 
 
 #### PostMVP  
-*These are examples only. Replace with your own Post-MVP features.*
-
 
 - Users can delete posts
 - Users can edit posts
@@ -91,12 +84,12 @@ This schedule will be used to keep track of your progress throughout the week an
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|May 5-7| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
-|May 7| Project Approval | Incomplete
-|May 7| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|May 7-12| Pseudocode / actual code | Incomplete
-|May 12| Initial Clickable Model  | Incomplete
-|May 12| MVP | Incomplete
+|May 5-7| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
+|May 7| Project Approval | Complete
+|May 7| Core Application Structure (HTML, CSS, etc.) | Complete
+|May 7-12| Pseudocode / actual code | Complete
+|May 12| Initial Clickable Model  | Complete
+|May 12| MVP | Complete
 |May 14| Presentations | Incomplete
 
 ## Timeframes
@@ -107,20 +100,20 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Prompt/Project Approval | H | 5 hrs| N/A | N/A |
-| Setting up initial App Structure/Components/Links | H | 1hr| N/A | N/A |
+| Prompt/Project Approval | H | 5 hrs| 5hrs | 5hrs |
+| Setting up initial App Structure/Components/Links | H | 1hr| 2hrs | 2hrs |
 | Pseudocode | H | 1hr| N/A | N/A |
-| Set up initial CSS | H | 1hr| N/A | N/A |
-| Navbar | H | .5hr| N/A | N/A |
-| Structure of Post Component | H | 2hrs| N/A | N/A |
-| Structure of Show Page Component | H | 2hrs| N/A | N/A |
-| Structure of New Post Component | H | 2hrs| N/A | N/A |
-| Structure of Comment Component | H | 2hrs| N/A | N/A |
-| Upvoting/Structure of Posts of Day Component | H | 2hrs| N/A | N/A |
-| Airtable Post Request | H | 2hrs| N/A | N/A |
-| Airtable Put Request | L | 2hrs| N/A | N/A |
+| Set up initial CSS | H | 1hr| .5hr | .5hr |
+| Navbar | H | .5hr| .5hr | .5hr |
+| Structure of Post Component | H | 2hrs| 2hrs | 2hrs |
+| Structure of Show Page Component | H | 2hrs| 2hrs | 2hrs |
+| Structure of New Post Component | H | 2hrs| 2hrs | 2hrs |
+| Structure of Comment Component | H | 2hrs| 2hrs | 2hrs |
+| Upvoting/Structure of Posts of Day Component | H | 2hrs| 3hrs | 3hrs |
+| Airtable Post Request | H | 2hrs| 2hrs | 2hrs |
+| Airtable Patch Request | L | 2hrs| 2hrs | 2hrs |
 | Airtable Delete Request | L | 2hrs| N/A | N/A |
-| Advanced Styling/CSS | L | 6 hrs| N/A | N/A |
+| Advanced Styling/CSS | L | 6 hrs| 6hrs | 6hrs |
 | Post MVP | L | 8hrs| N/A | N/A |
 | Total | H | 36.5 hrs| N/A | N/A |
 
