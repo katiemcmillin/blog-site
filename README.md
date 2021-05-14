@@ -113,9 +113,9 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Airtable Post Request | H | 2hrs| 2hrs | 2hrs |
 | Airtable Patch Request | L | 2hrs| 2hrs | 2hrs |
 | Airtable Delete Request | L | 2hrs| N/A | N/A |
-| Advanced Styling/CSS | L | 6 hrs| 6hrs | 6hrs |
+| Advanced Styling/CSS | L | 6 hrs| 12hrs | 12hrs |
 | Post MVP | L | 8hrs| N/A | N/A |
-| Total | H | 36.5 hrs| N/A | N/A |
+| Total | H | 36.5 hrs| 30hrs | 30hrs |
 
 ## SWOT Analysis
 
