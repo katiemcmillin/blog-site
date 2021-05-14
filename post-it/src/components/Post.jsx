@@ -19,7 +19,7 @@ function Post(props) {
       props.setToggleFetch((curr) => !curr);
     }
     handlePatch();
-  }, [props.setToggleFetch, count, props])
+  }, [props.setToggleFetch, count])
 
 const handleSubmit = (e) => {
   e.preventDefault();
@@ -35,11 +35,12 @@ const handleSubmit = (e) => {
       <div id="text-container">
         <div className="wrapper-div"><p>{body }</p></div>
       </div>
-      <div id="button-container">
-        <Link to={`/show-page/${props.post.id}`}><button id="comment-button"><FontAwesomeIcon icon={faComment} /></button>
+        <div id="button-container">
+          <span id="button-label">Comment</span>
+          <Link to={`/show-page/${props.post.id}`}><button id="comment-button"><FontAwesomeIcon icon={faComment} /></button>
           </Link>
           <form onSubmit={handleSubmit }>
-            <button id="up-arrow"value={votes} type="submit"><FontAwesomeIcon icon={faAngleUp} /></button>
+            <button id="up-arrow" value={votes} type="submit"><FontAwesomeIcon icon={faAngleUp}/></button>
             <span>{votes}</span>
             </form>
       </div>

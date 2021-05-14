@@ -17,7 +17,7 @@
   padding: 20px 0px 20px 5px;
   text-align: left;
   border: 1px solid #d6d6d6;
-  background-color: white;
+  background-color:#fcfaec;
 }
 #nav-container {
   background-color: #f7dd00;
@@ -77,6 +77,15 @@ input{
 background-color: #f5f5f7;
 border: 1px solid black;
 }
+#left-link, #right-link {
+  margin: 5px;
+}
+@media screen and (min-width: 800px) {
+  #left-link, #right-link {
+    margin: 10px;
+    font-size: 20px;
+}
+}  
 
 @media screen and (max-width: 500px) {
   .wrapper-div{
@@ -91,9 +100,12 @@ border: 1px solid black;
     flex-direction: column;
     align-items: center;
   }
+  #button-label {
+    display: none;
+    }
+}
+#button-label {
+padding-top: 24px;
 }
 
-#left-link, #right-link {
-  margin: 5px;
-}
 
