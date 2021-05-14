@@ -6,12 +6,28 @@
 .body{
   margin: 20px;
 }
+
+/* Nav */
 #nav-container {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-
+  background-color: #f7dd00;
 }
+a{
+  text-decoration: none;
+}
+#left-link, #right-link {
+  margin: 5px;
+}
+
+/* Post */
+.whole-post-container{
+  border-top: 1px solid #d6d6d6;
+  background-color: #f5f5f7;
+  margin: 20px;
+}
+
 .wrapper-div {
   margin: 50px 200px 50px 200px;
   padding: 20px 0px 20px 5px;
@@ -19,17 +35,8 @@
   border: 1px solid #d6d6d6;
   background-color:#76cdec;
 }
-#nav-container {
-  background-color: #f7dd00;
-}
-button{
-  margin: 10px;
-  padding: 10px;
-  font-size: 20px;
-  background-color: white;
-}
-a{
-  text-decoration: none;
+h3{
+  margin-top: 0px;
 }
 .username{
   color: #55c7f0;
@@ -39,17 +46,29 @@ a{
   margin-left: 200px;
   
 }
+button{
+  margin: 10px;
+  padding: 10px;
+  font-size: 20px;
+  background-color: white;
+}
+
+
+/* Comment */
 ul{
   list-style-type: none;
 }
-.whole-post-container{
-  border-top: 1px solid #d6d6d6;
+#comment {
+  margin-right: 5px;
+}
+
+
+.comment-submit{
   background-color: #f5f5f7;
-  margin: 20px;
-}
-h3{
-  margin-top: 0px;
-}
+  border: 1px solid black;
+  }
+
+/* Form */
 #form-body {
 resize: vertical;
 width: 200px;
@@ -66,20 +85,15 @@ input{
   text-align: left;
   margin-bottom: 20px;
 }
-#comment {
-  margin-right: 5px;
-}
+
 #button-container{
   display: flex;
   justify-content: center;
 }
-.comment-submit{
-background-color: #f5f5f7;
-border: 1px solid black;
-}
-#left-link, #right-link {
-  margin: 5px;
-}
+
+
+
+/* Breakpoints */
 @media screen and (min-width: 800px) {
   #left-link, #right-link {
     margin: 10px;
@@ -88,14 +102,14 @@ border: 1px solid black;
 .wrapper-div {
   margin: 50px 250px 50px 250px;
 }
-}  
+}
 
 @media screen and (max-width: 500px) {
-  .wrapper-div{
+  .wrapper-div {
     width: 200px;
     margin: 0 auto;
   }
-  .username{
+  .username {
     margin-left: 15px;
   }
   #comment-container {
@@ -106,9 +120,5 @@ border: 1px solid black;
   #button-label {
     display: none;
     }
-}
-#button-label {
-padding-top: 24px;
-}
-
-
+  }
+  
