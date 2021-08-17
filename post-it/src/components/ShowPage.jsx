@@ -11,6 +11,7 @@ function ShowPage(props) {
       <h3>Loading...</h3>
     )
   }
+  //Destructuring
   const { author, title, body, comments } = post.fields;
 
   return ( 
