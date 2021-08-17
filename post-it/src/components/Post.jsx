@@ -9,6 +9,7 @@ import {config} from "../services"
 function Post(props) {
   const { title, body, author, votes } = props.post.fields;
   const [count, setCount] = useState(votes);
+  //adds upvotes
   useEffect(() => {
     const handlePatch = async () => {
       const newCount = {
