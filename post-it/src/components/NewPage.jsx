@@ -3,6 +3,7 @@ import { postBaseURL, config } from "../services";
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
 
+//Changes state variables
 function NewPage(props) {
   const [title, setTitle] = useState("");
   const [body, setBody] = useState("");
@@ -10,7 +11,7 @@ function NewPage(props) {
   const [votes, setVotes] = useState(0);
   const history = useHistory();
 
-
+//Post request for form
   const handleSubmit = async (e) => {
     e.preventDefault();
     const newPost = {
